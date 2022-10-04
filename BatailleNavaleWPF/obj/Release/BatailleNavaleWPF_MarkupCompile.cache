@@ -4,11 +4,11 @@
 winexe
 C#
 .cs
-C:\Users\verro\OneDrive - Cégep Limoilou\Bloc_2\Developpement Informatique\TP3\exercice2-4\BatailleNavaleWPF\BatailleNavaleWPF\obj\Debug\
+C:\Users\verro\OneDrive - Cégep Limoilou\Bloc_2\Developpement Informatique\TP3\exercice2-4\BatailleNavaleWPF\BatailleNavaleWPF\obj\Release\
 BatailleNavaleWPF
 none
 false
-DEBUG;TRACE
+TRACE
 C:\Users\verro\OneDrive - Cégep Limoilou\Bloc_2\Developpement Informatique\TP3\exercice2-4\BatailleNavaleWPF\BatailleNavaleWPF\App.xaml
 11151548125
 
@@ -16,5 +16,5 @@ C:\Users\verro\OneDrive - Cégep Limoilou\Bloc_2\Developpement Informatique\TP3\
 13-1505183044
 MainWindow.xaml;
 
-False
+True
 

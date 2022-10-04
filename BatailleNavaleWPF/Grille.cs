@@ -29,19 +29,19 @@ namespace BatailleNavale
             Matrice = new Matrice2D(NbLignes, NbColonnes) { IndexDepart = 1 };
 
             // On place les navires pour un début de partie
-            PlacerNavire(TypeNavire.SousMarin);
-            PlacerNavire(TypeNavire.SousMarin);
-            PlacerNavire(TypeNavire.Destroyer);
-            PlacerNavire(TypeNavire.Destroyer);
-            PlacerNavire(TypeNavire.Cuirasse);
-            PlacerNavire(TypeNavire.Patrouilleur);
-            PlacerNavire(TypeNavire.PorteAvions);
+            //PlacerNavire(TypeNavire.SousMarin);
+            //PlacerNavire(TypeNavire.SousMarin);
+            //PlacerNavire(TypeNavire.Destroyer);
+            //PlacerNavire(TypeNavire.Destroyer);
+            //PlacerNavire(TypeNavire.Cuirasse);
+            //PlacerNavire(TypeNavire.Patrouilleur);
+            //PlacerNavire(TypeNavire.PorteAvions);
         }
 
         private void PlacerNavire(TypeNavire typeNavire)
         {
             Case[] cases = TrouverPlace((int)typeNavire);
-            new Navire(typeNavire, cases);
+            //new Navire(typeNavire, cases);
         }
 
         // Trouve une place vide au hasard pour le nombre de cases demandé (la méthode assume qu'il y a de la place)
@@ -146,19 +146,19 @@ namespace BatailleNavale
                         char type = ' ';
                         switch (navire.Type)
                         {
-                            case TypeNavire.Cuirasse:
+                            case 4:
                                 type = 'C';
                                 break;
-                            case TypeNavire.Destroyer:
+                            case 2:
                                 type = 'D';
                                 break;
-                            case TypeNavire.Patrouilleur:
+                            case 3:
                                 type = 'P';
                                 break;
-                            case TypeNavire.PorteAvions:
+                            case 5:
                                 type = 'A';
                                 break;
-                            case TypeNavire.SousMarin:
+                            case 1:
                                 type = 'S';
                                 break;
                         }
