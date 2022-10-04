@@ -29,7 +29,7 @@ namespace BatailleNavale
             Matrice = new Matrice2D(NbLignes, NbColonnes) { IndexDepart = 1 };
 
             // On place les navires pour un début de partie
-            //PlacerNavire(TypeNavire.SousMarin);
+            PlacerNavire();
             //PlacerNavire(TypeNavire.SousMarin);
             //PlacerNavire(TypeNavire.Destroyer);
             //PlacerNavire(TypeNavire.Destroyer);
@@ -38,10 +38,10 @@ namespace BatailleNavale
             //PlacerNavire(TypeNavire.PorteAvions);
         }
 
-        private void PlacerNavire(TypeNavire typeNavire)
+        private void PlacerNavire()
         {
-            Case[] cases = TrouverPlace((int)typeNavire);
-            //new Navire(typeNavire, cases);
+            Case[] cases = TrouverPlace(1);
+            new SousMarin(cases);
         }
 
         // Trouve une place vide au hasard pour le nombre de cases demandé (la méthode assume qu'il y a de la place)
