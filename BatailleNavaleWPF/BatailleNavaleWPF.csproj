@@ -55,6 +55,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Destroyer.cs" />
     <Compile Include="INavire.cs" />
     <Compile Include="Matrice2D.cs" />
     <Compile Include="SousMarin.cs" />

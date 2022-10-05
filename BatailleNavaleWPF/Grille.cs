@@ -40,8 +40,11 @@ namespace BatailleNavale
 
         private void PlacerNavire()
         {
-            Case[] cases = TrouverPlace(1);
-            new SousMarin(cases);
+            Case[] casesSousMarin = TrouverPlace(1);
+            new SousMarin(casesSousMarin);
+
+            Case[] casesDestroyer = TrouverPlace(2);
+            new Destroyer(casesDestroyer);
         }
 
         // Trouve une place vide au hasard pour le nombre de cases demandé (la méthode assume qu'il y a de la place)
