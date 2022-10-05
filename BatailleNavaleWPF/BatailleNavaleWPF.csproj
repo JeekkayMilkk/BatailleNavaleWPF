@@ -60,6 +60,7 @@
     <Compile Include="INavire.cs" />
     <Compile Include="Matrice2D.cs" />
     <Compile Include="Patrouilleur.cs" />
+    <Compile Include="PorteAvion.cs" />
     <Compile Include="SousMarin.cs" />
     <Compile Include="TypeNavire.cs" />
     <Page Include="MainWindow.xaml">
