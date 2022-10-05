@@ -45,6 +45,9 @@ namespace BatailleNavale
 
             Case[] casesDestroyer = TrouverPlace(2);
             new Destroyer(casesDestroyer);
+
+            Case[] casesPatrouilleur = TrouverPlace(3);
+            new Patrouilleur(casesPatrouilleur);
         }
 
         // Trouve une place vide au hasard pour le nombre de cases demandé (la méthode assume qu'il y a de la place)
