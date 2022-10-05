@@ -30,12 +30,6 @@ namespace BatailleNavale
 
             // On place les navires pour un début de partie
             PlacerNavire();
-            //PlacerNavire(TypeNavire.SousMarin);
-            //PlacerNavire(TypeNavire.Destroyer);
-            //PlacerNavire(TypeNavire.Destroyer);
-            //PlacerNavire(TypeNavire.Cuirasse);
-            //PlacerNavire(TypeNavire.Patrouilleur);
-            //PlacerNavire(TypeNavire.PorteAvions);
         }
 
         private void PlacerNavire()
@@ -152,25 +146,7 @@ namespace BatailleNavale
                 {
                     if (GetNavire(i, j, out Navire navire))
                     {
-                        char type = ' ';
-                        switch (navire.Type)
-                        {
-                            case 4:
-                                type = 'C';
-                                break;
-                            case 2:
-                                type = 'D';
-                                break;
-                            case 3:
-                                type = 'P';
-                                break;
-                            case 5:
-                                type = 'A';
-                                break;
-                            case 1:
-                                type = 'S';
-                                break;
-                        }
+                        char type = navire.Type;
                         chaine += $" {type} ";
                     }
                     else

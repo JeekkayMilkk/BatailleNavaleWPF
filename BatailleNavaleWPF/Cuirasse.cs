@@ -9,7 +9,7 @@ namespace BatailleNavale
     class Cuirasse : Navire
     {
         public static int Taille = 4;
-        public Cuirasse(Case[] carres) : base(Taille, carres)
+        public Cuirasse(Case[] carres) : base('C', carres)
         {
 
         }

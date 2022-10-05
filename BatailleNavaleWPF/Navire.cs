@@ -4,12 +4,12 @@ namespace BatailleNavale
 {
     class Navire : INavire
     {
-        public int Type { get; }
+        public char Type { get; }
         public bool Coule { get => EstCoule(); }
 
         private readonly Case[] cases;
 
-        public Navire (int type, Case[] carres)
+        public Navire (char type, Case[] carres)
         {
             Type = type;
             cases = carres;
@@ -20,7 +20,7 @@ namespace BatailleNavale
             }
         }
 
-        public bool EstCoule()
+        private bool EstCoule()
         {
             foreach (Case carre in cases)
             {

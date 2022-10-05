@@ -9,7 +9,7 @@ namespace BatailleNavale
     class SousMarin : Navire
     {
         public static int Taille { get; } = 1;
-        public SousMarin(Case[] carres) : base(Taille, carres)
+        public SousMarin(Case[] carres) : base('S', carres)
         {
                 
         }
