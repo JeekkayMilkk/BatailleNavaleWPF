@@ -10,7 +10,7 @@ namespace BatailleNavale
     {
         public static int Taille { get; } = 3;
 
-        public Patrouilleur(Case[] carres) :  base('P', carres)
+        public Patrouilleur(Case[] carres) :  base('P', carres, Taille)
         {
 
         }

@@ -10,7 +10,7 @@ namespace BatailleNavale
     {
         public static int Taille { get; } = 2;
 
-        public Destroyer(Case[] carres) : base('D', carres)
+        public Destroyer(Case[] carres) : base('D', carres, Taille)
         {
 
         }

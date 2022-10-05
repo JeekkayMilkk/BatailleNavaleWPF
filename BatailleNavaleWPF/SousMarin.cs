@@ -8,8 +8,8 @@ namespace BatailleNavale
 {
     class SousMarin : Navire
     {
-        public static int Taille { get; } = 1;
-        public SousMarin(Case[] carres) : base('S', carres)
+        public const int Taille = 1;
+        public SousMarin(Case[] carres) : base('S', carres, Taille)
         {
                 
         }

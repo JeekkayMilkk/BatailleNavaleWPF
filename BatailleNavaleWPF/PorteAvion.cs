@@ -10,7 +10,7 @@ namespace BatailleNavale
     {
         public static int Taille { get; } = 5;
 
-        public PorteAvion(Case[] carres): base('A', carres)
+        public PorteAvion(Case[] carres): base('A', carres, Taille)
         {
 
         }
