@@ -8,9 +8,9 @@ namespace BatailleNavale
 {
     class PorteAvion : Navire
     {
-        private const int _taille = 5;
+        public static int Taille { get; } = 5;
 
-        public PorteAvion(Case[] carres): base(_taille, carres)
+        public PorteAvion(Case[] carres): base(Taille, carres)
         {
 
         }

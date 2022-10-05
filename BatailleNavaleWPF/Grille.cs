@@ -40,20 +40,17 @@ namespace BatailleNavale
 
         private void PlacerNavire()
         {
-            Case[] casesSousMarin = TrouverPlace(1);
-            new SousMarin(casesSousMarin);
+            new SousMarin(TrouverPlace(SousMarin.Taille));
+            new SousMarin(TrouverPlace(SousMarin.Taille));
 
-            Case[] casesDestroyer = TrouverPlace(2);
-            new Destroyer(casesDestroyer);
+            new Destroyer(TrouverPlace(Destroyer.Taille));
+            new Destroyer(TrouverPlace(Destroyer.Taille));
 
-            Case[] casesPatrouilleur = TrouverPlace(3);
-            new Patrouilleur(casesPatrouilleur);
+            new Patrouilleur(TrouverPlace(Patrouilleur.Taille));
 
-            Case[] casesCuirasse = TrouverPlace(4);
-            new Cuirasse(casesCuirasse);
+            new Cuirasse(TrouverPlace(Cuirasse.Taille));
 
-            Case[] casesPorteAvion = TrouverPlace(5);
-            new PorteAvion(casesPorteAvion);
+            new PorteAvion(TrouverPlace(PorteAvion.Taille));
         }
 
         // Trouve une place vide au hasard pour le nombre de cases demandé (la méthode assume qu'il y a de la place)

@@ -8,9 +8,9 @@ namespace BatailleNavale
 {
     class Patrouilleur : Navire
     {
-        private const int _taille = 3;
+        public static int Taille { get; } = 3;
 
-        public Patrouilleur(Case[] carres) :  base(_taille, carres)
+        public Patrouilleur(Case[] carres) :  base(Taille, carres)
         {
 
         }

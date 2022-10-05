@@ -8,9 +8,9 @@ namespace BatailleNavale
 {
     class Destroyer : Navire
     {
-        private const int _taille = 2;
+        public static int Taille { get; } = 2;
 
-        public Destroyer(Case[] carres) : base(_taille, carres)
+        public Destroyer(Case[] carres) : base(Taille, carres)
         {
 
         }

@@ -8,8 +8,8 @@ namespace BatailleNavale
 {
     class Cuirasse : Navire
     {
-        private const int _taille = 4;
-        public Cuirasse(Case[] carres) : base(_taille, carres)
+        public static int Taille = 4;
+        public Cuirasse(Case[] carres) : base(Taille, carres)
         {
 
         }
