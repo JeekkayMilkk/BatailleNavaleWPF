@@ -48,6 +48,9 @@ namespace BatailleNavale
 
             Case[] casesPatrouilleur = TrouverPlace(3);
             new Patrouilleur(casesPatrouilleur);
+
+            Case[] casesCuirasse = TrouverPlace(4);
+            new Cuirasse(casesCuirasse);
         }
 
         // Trouve une place vide au hasard pour le nombre de cases demandé (la méthode assume qu'il y a de la place)
